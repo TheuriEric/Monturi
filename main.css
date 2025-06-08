@@ -1,0 +1,131 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+header {
+    background-color: rgba(15, 52, 96, 0.9);
+    width: 105%;
+    position: fixed;
+    z-index: 1000;
+    height: 20px;
+    top: 0;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.links a {
+    text-decoration: none;
+    color: #171b1e;
+}
+.links a:hover {
+    color: grey;
+}
+nav {
+    background-color:#052B3C;
+}
+.nav_buttons {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+.login {
+    background: transparent;
+    color: #8B7AD8;
+    border: 2px solid #8B7AD8; }
+.sign_up {
+    background: #0F3460;
+    color: white;
+}
+.button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 122, 216, 0.3);
+
+}
+
+#hero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    overflow:hidden;
+    height: 100vh;
+}
+.startup_name {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #8D99E6;
+     
+    
+}#hero p{
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.get_started {
+    background-color: #052B3C;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 20px ;
+    padding: 1rem 2rem;
+    
+}
+a {
+    text-decoration: none;
+}
+section {
+    padding: 1rem;
+    margin: 2rem;
+}
+.section_title {
+    text-align: center;
+    align-items: center;
+    font-size: 36px;
+    line-height: 44;
+    color: #8D99E6;
+    margin-bottom: 3rem;
+}
+.about_us h2 {
+    font-size: 36;
+    line-height: 44px;
+    color: #8D99E6;
+    letter-spacing: 3%;
+}
+.about_us p {
+   
+    letter-spacing: 0.3px;
+    font-size: 18;
+}
+.origin h2 {
+    color: #8D99E6;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+   
+}
+.origin p{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
