@@ -11,155 +11,188 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul id="navbar">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contacts">Contact Us</a></li>
-                </ul>
+            <nav class="navigation">
+                <div class="links">
+                    <a href="#about">About Us</a>
+                    <a href="#products">Products</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact_us">Contact Us</a>
+                </div>
+                <div class="nav_buttons">
+                    <button>Sign Up</button>
+                    <button>Login</button>
+                </div>
             </nav>
-            <button>Sign Up</button>
-            <button>Login</button>
         </header>
+    
+<!--Hero Section-->
         
             <section id="hero">
-                <h1>Monturi</h1>
-                <p>Elevate your Financial Edge Through Crypto</p>
-                <button>Get Started</button>
+                <div class="hero_content">
+                    <h1>Monturi</h1>
+                    <p>Elevate your Financial Edge Through Crypto</p>
+                    <button>Get Started</button>
+                </div>
+                
             </section>
+
+<!--About Section-->
             <section id="about">
-                <div>
+                <div class="about_us">
                     <h2>Who We Are</h2>
                     <p>Who We Are: 
                         At Monturi, we’re more than just a fintech startup — we’re your gateway to smarter investing in the financial world.
                         Whether it's crypto, forex, or blockchain-powered services, our mission is to help you navigate decentralized finance with confidence. We cut through the noise, offering transparent, trustworthy, and well-researched investment opportunities. No hype, no scams — just real value and protection for your financial future.</p>
                 </div>
-                <div>
+                <div class="origin">
                     <h2>Our Origin</h2>
                     <p>Our Origin
-                        Monturi was founded to protect people from rising crypto scams that have cost many their land, savings, and even school fees. As a fintech expert in crypto and blockchain, Monturi offers a safer, smarter way to invest and grow wealth.oducts">
-                <div id="product_slide">
-                    <div class="product">
-                        <img src="images/auditor.png" alt="roboadvisor" class="product_image">
-                        <h3>
-                            <u>RoboAdvisor</u>
-                            
-                        </h3>
-                        <p><u>Tool</u>: Data analysis libraries</p>
-                            <p><u>Invention</u>: Combinig AI with human expertise to identify trends and advice accordingly</p>
-                            <p><u>Impact</u>: Clients receive more accurate data and invest comfortably</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/fund.png" alt="cryptofund image" class="product_image">
-                        <h3>
-                            <u>CryptoFund</u>
-                            
-                        </h3>
-                        <p><u>Tool</u>: Live crypto dashboard</p>
-                            <p><u>Invention</u>: Financial Modelling with AI</p>
-                            <p><u>Impact</u>: We shield clients from scams by sharing accurate, reliable crypto information</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/consulting.png" alt="Consultancy" class="product_image">
-                        <h3>
-                            <u>Fintech Consultancy</u>
-                            
-                        </h3>
-                        <p><u>Tool</u>: Staregizing and capitalizing on market demands</p>
-                            <p><u>Invention</u>: A step by step guide on how to launch fintechs</p>
-                            <p><u>Impact</u>: Enable startups launch faster and with ease</p>
+                        Monturi was founded to protect people from rising crypto scams that have cost many their land, savings, and even school fees. As a fintech expert in crypto and blockchain, Monturi offers a safer, smarter way to invest and grow wealth.oducts"</p> 
+                </div>
+
+<!--Products-->
+                <section id="product_slide">
+                    <h2 class="section_title">Our Products</h2>
+                    <div class="products_grid">
+                        <div class="product">
+                            <img src="images/roboadvisor.png" alt="roboadvisor" class="product_icon">
+                            <h3>
+                                <u>RoboAdvisor</u>
+                                
+                            </h3>
+                            <p><strong><u>Tool</u></strong>: Data analysis libraries</p>
+                            <strong><p><u>Invention</u></strong>: Combinig AI with human expertise to identify trends and advice accordingly</p>
+                            <strong><p><u>Impact</u></strong>: Clients receive more accurate data and invest comfortably</p>
+                        </div>
+                        <div class="product">
+                            <img src="images/fund.png" alt="cryptofund image" class="product_icon">
+                            <h3>
+                                <u>CryptoFund</u>
+                                
+                            </h3>
+                            <p><strong><u>Tool</u></strong>: Live crypto dashboard</p>
+                            <strong><p><u>Invention</u></strong>: Financial Modelling with AI</p>
+                            <strong><p><u>Impact</u></strong>: We shield clients from scams by sharing accurate, reliable crypto information</p>
+                        </div>
+                        <div class="product">
+                            <img src="images/consulting.png" alt="Consultancy" class="product_icon">
+                            <h3>
+                                <u>Fintech Consultancy</u>
+                                
+                            </h3>
+                            <strong><p><u>Tool</u></strong>: Staregizing and capitalizing on market demands</p>
+                            <strong><p><u>Invention</u></strong>: A step by step guide on how to launch fintechs</p>
+                            <strong><p><u>Impact</u></strong>: Enable startups launch faster and with ease</p>
+                        </div>
                     </div>
 
                 </div>
 
             </section>
+<!--Testimonials-->
             <section id="testimonials">
-                <h3>Testimonials</h3>
-                <div class="testimonial_card">
-                    <p>“They are really experienced and willing to listen and understand your concern. Simply the best there is”</p>
-                    <p>Karanja Kimani</p>
-                    <p>Client</p>
+                <h2 class="section_title">Testimonials</h2>
+                <div class="testimonial_grid">
+                    <div class="testimonial_card">
+                        <p class="testimonial_text">“They are really experienced and willing to listen and understand your concern. Simply the best there is”</p>
+                        <p class="author">Karanja Kimani</p>
+                        <p class="role">Client</p>
 
-                </div>
-                <div class="testimonial_card">
-                    <p>“The team at Monturi is really helpful. They listen and walk with you throughoutthe whole investment journey”</p>
-                    <p>Aisha Barasa</p>
-                    <p>Client</p>
+                    </div>
+                    <div class="testimonial_card">
+                        <p class="testimonial_text">“The team at Monturi is really helpful. They listen and walk with you throughoutthe whole investment journey”</p>
+                        <p class="author">Joy Awino</p>
+                        <p class="role">Client</p>
+                    </div>
                 </div>
             </section>
+<!--Values-->
             <section id="values">
-                <div class="value">
-                    <p><b>Transparency</b></p>
-                    <img src="images/transparency.png" alt="transparency">   
-                </div>
-                <div>
-                    <p><b>Integrity</b></p>
-                    <img src="images/user.png" alt="Integrity">
-                </div>
-                <div>
-                    <p><b>Security</b></p>
-                    <img src="images/security.png" alt="">
+                <h2 class="section_title">Our Values</h2>
+                <div class="values_grid">
+                    <div class="value">
+                        <h3><b>Transparency</b></h3>
+                        <div class="value_icon"><img src="images/transparency.png" alt="transparency"></div>
+                    </div>
+                    <div class="value">
+                        <h3><b>Integrity</b></h3>
+                        <div class="value_icon"><img src="images/user.png" alt="Integrity"></div>
+                    </div>
+                    <div class="value">
+                        <h3<b>Security</b></h3>
+                        <div class="value_icon"><img src="images/security.png" alt=""></div>
 
+                    </div>
                 </div>
                 
                 
-
+<!--Team-->
             </section>
             <section id="team">
-                <h3>Meet The Team</h3>
-                <div class="member">
-                    <svg width="150" height="150" viewBox="0 0 150 150">
-                        <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
-                        <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">ET</text>
-                    </svg>
-                    <p>Eric Theuri</p>
-                    <p>Managing Director</p>
-                    <p><i>Oversee the activities of the company</i></p>
-                </div>
-                <div class="member">
-                    <svg width="150" height="150" viewBox="0 0 150 150">
-                        <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
-                        <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">AB</text>
-                    </svg>
-                    <p>Aisha Barasa</p>
-                    <p>Chief Technical Ofiicer</p>
-                    <p><i>Head of technical department</i></p>
-                </div>
-                <div class="member">
-                    <svg width="150" height="150" viewBox="0 0 150 150">
-                        <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
-                        <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">BM</text>
-                    </svg>
-                    <p>Benson Mose</p>
-                    <p>Relationship Manager</p>
-                    <p><i>Handles all client need</i></p>
-                </div>
-                <div class="member">
-                    <svg width="150" height="150" viewBox="0 0 150 150">
-                        <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
-                        <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">PI</text>
-                    </svg>
-                    <p>Polycarp Irungu</p>
-                    <p>Human Resource</p>
-                    <p><i>Handles all matters concernig staff</i></p>
+                <h2 class="section_title">Meet The Team</h2>
+                <div class="team_grid">
+                    <div class="member">
+                        <svg width="150" height="150" viewBox="0 0 150 150">
+                            <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
+                            <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">ET</text>
+                        </svg>
+                        <h4>Eric Theuri</h4>
+                        <p class="role">Managing Director</p>
+                        <p class="jd"><i>Oversee the activities of the company</i></p>
+                    </div>
+                    <div class="member">
+                        <svg width="150" height="150" viewBox="0 0 150 150">
+                            <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
+                            <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">AB</text>
+                        </svg>
+                        <h4>Aisha Barasa</h4>
+                        <p class="role">Chief Technical Ofiicer</p>
+                        <p class="jd"><i>Head of technical department</i></p>
+                    </div>
+                    <div class="member">
+                        <svg width="150" height="150" viewBox="0 0 150 150">
+                            <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
+                            <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">BM</text>
+                        </svg>
+                        <h4>Benson Mose</h4>
+                        <p class="role">Relationship Manager</p>
+                        <p class="jd"><i>Handles all client need</i></p>
+                    </div>
+                    <div class="member">
+                        <svg width="150" height="150" viewBox="0 0 150 150">
+                            <circle cx="75" cy="75" r="75" fill="#2c3e50"/>
+                            <text x="75" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="45" font-weight="bold">PI</text>
+                        </svg>
+                        <h4>Polycarp Irungu</h4>
+                        <p class="role">Human Resource</p>
+                        <p class="jd"><i>Handles all matters concernig staff</i></p>
+                    </div>
                 </div>
 
-
+<!--Chatbot-->
             </section>
             <section id="chatbot">
+                <h2 class="section_title">Chatbot</h2>
                 <h5>Powered by AI  <img src="images/ai.png" alt="ai_image"></h5>
-                <div>
-                    <p>Welcome! I'm your crypto assistant</p>
-                    <p>Best crypto to invest in today?</p>
-
-                    <input type="text" name="user_input" id="user_input" placeholder="Chat with us" >
+                <div class="chat-area">
+                    <div class="chats">
+                        <div class="bot"><p>Welcome! I'm your crypto assistant</p></div>
+                        <div class="user"><p>Best crypto to invest in today?</p></div>
+                     </div>
+                     <div class="chat_input">
+                        <input type="text" name="user_input" id="user_input" placeholder="Chat with us" >
+                        <button>➤ </button>
+                    </div>
                 </div>
             </section>
-            <section>
-                <form action="submit" id="contact_form" >
-                    
+
+
+<!-- Contact Section-->
+        
+            <section id="contact_us">
+                <h2 class="section_title">Contact Us</h2>
+                <form class="contact_form" >
                     <div class="form_part">
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" placeholder="Enter your name" required class="form_input">
@@ -172,21 +205,24 @@
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" placeholder="Enter your message" required class="form_input"></textarea>
                     </div>
+                    <div class="form_part">
+                        <button type="submit" class="send_button">Send</button>
+                    </div>
 
 
                 </form>
             </section>
+<!--Footer-->
             <footer>
                 <p>&copy;Monturi. All Rights Reserved</p>
                 <div class="contact_links">
-                    <ul>
-                        <li><a href="https://whatsapp.web"><img src="images/whatsapp.svg" alt="whatsapp"></a></li>
-                        <li><a href="https://instagram.com"><img src="images/instagram.svg" alt="instagram"></a></li>
-                        <li><a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="linked"></a></li>
-                        <li><a href="www.tiktok.com"><img src="images/tiktok.svg" alt="tiktok"></a></li>
-                        <li><a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook"></a></li>
-                        <li><a href="https://www.github.com/TheuriEric/Monturi"><img src="images/github.svg" alt="github"></a></li>
-                    </ul>
+                        <a href="https://whatsapp.web"><img src="images/whatsapp.svg" alt="whatsapp"></a>
+                        <a href="https://instagram.com"><img src="images/instagram.svg" alt="instagram"></a>
+                        <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="linked"></a>
+                        <a href="www.tiktok.com"><img src="images/tiktok.svg" alt="tiktok"></a>
+                        <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.github.com/TheuriEric/Monturi"><img src="images/github.svg" alt="github"></a>
+
                 </div>
             </footer>
         </body>
