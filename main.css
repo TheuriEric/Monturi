@@ -90,21 +90,18 @@ nav {
 a {
     text-decoration: none;
 }
-section {
-    padding: 1rem;
-    margin: 2rem;
-} 
+
 .section_title {
     text-align: center;
     align-items: center;
     font-size: 36px;
-    line-height: 44;
+    line-height: 1.2;
     color: #8D99E6;
     margin-bottom: 3rem;
 }
 .about_us h2 {
     font-size: 36;
-    line-height: 44px;
+    line-height: 1.2px;
     color: #8D99E6;
     letter-spacing: 3%;
 }
@@ -131,6 +128,32 @@ section {
     align-items: center;
     justify-content: center;
 }
+.about_us h2 {
+    font-size: 36px; 
+    line-height: 44px;
+    color: #8D99E6;
+    letter-spacing: 0.03em; 
+
+}
+.about_us p {
+    letter-spacing: 0.3px;
+    font-size: 18px; 
+}
+.about_us {
+    background-color: #f8f8f8; /* Light background for distinction */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.origin {
+    background-color: #f8f8f8; /* Light background for distinction */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .product {
     border-radius: 16px ;
     text-align: center;
@@ -143,18 +166,16 @@ section {
 .product_icon {
     width: 60px;
     height: 60px;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    margin: 0 auto, 1rem;
+    margin: 0 auto 1rem;
 }
 .product .h3{
-    font-size: 28;
-    line-height: 44;
+    font-size: 28px;
+    line-height: 1.2;
 
 }
 .product  p {
-    font-size: 14;
+    font-size: 14px;
     
 }
 .product_text {
@@ -227,12 +248,28 @@ section {
     border-radius: 12px;
     max-width: 650px;
     height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
    
 }
 .chat_input {
     display: flex;
     gap: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: auto;
+
+}
+.chats {
+    flex-grow: 1; 
+    overflow-y: auto; 
+    padding-bottom: 1rem; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 10px;
 }
 .chat_input input{
     flex: 1;
@@ -268,13 +305,25 @@ section {
 .message {
     height: max-content;
     width: auto;
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+.chat_input button {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact_form {
     max-width: 650px;
     background: #8D99E6;
-    border-radius:16 ;
+    border-radius:16px ;
     padding: 2rem;
     border-radius: 16px;
+    margin : 0 auto; 
 }
 .form_part {
     margin-bottom: 0.5rem;
@@ -292,7 +341,7 @@ section {
     background: #052B3C;
     color: white;
     outline: none;
-    padding: 1 rem;
+    padding: 1rem;
 }
 .form_part textarea {
     height: 144px;
@@ -301,14 +350,15 @@ section {
 .send_button {
     background: #052B3C;
     cursor: pointer;
-    color: black ;
-    width: 100%;
+    color: white ;
     font-size: 16px;
-    padding: 1rem, 2rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 200px;
     width: 160px;
     height: 60px;
+    display: block;
+    margin: 0 auto;
 }
 .send_button:hover {
     background: #1A4A7A;
