@@ -207,15 +207,25 @@
             <section id="chatbot">
                 <h2 class="section_title">Chatbot</h2>
                 <h5>Powered by AI🤖</h5>
+                <p class="instruction">Ask our AI about our story, services, or how you can get involved</p>
                 <div class="chat_area">
-                    <div class="chats">
-                        <div class="message bot"><p>Welcome! I'm your crypto assistant</p></div>
-                        <div class="message user"><p>Best crypto to invest in today?</p></div>
+                    <div class="chats" id="chat-messages">
+                        
+                        <div class="message bot"><p>Welcome! I'm your financial assistant</p></div> 
+                        <!-- <div class="message user"><p>Best crypto to invest in today?</p></div> -->
                      </div>
                      <div class="chat_input">
-                        <input type="text"  placeholder="Chat with us" >
-                        <button>➤</button>
+                        <input type="text" id="user-input" placeholder="Chat with us..." >
+                        <button id="send-button">➤</button>
                     </div>
+                </div>
+                <div class="sample-questions">
+                    <h4>Sample Questions:</h4>
+                    <button class="sample-button">Who founded Monturi?</button>
+                    <button class="sample-button">What problem does Monturi solve?</button>
+                    <button class="sample-button">Which services do we offer?</button>
+                    <button class="sample-button">How can you contact our team?</button>
+                    <button class="sample-button">What is Monturi's vision?</button>
                 </div>
             </section>
 

@@ -276,6 +276,11 @@ a {
     text-align: center;
     padding: 3rem;
 }
+.instruction {
+    font-size: 1.1rem;
+    color: black;
+
+}
 .chat_area {
     background-color: #8D99E6;
     border-radius: 12px;
