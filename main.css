@@ -111,7 +111,6 @@ a {
     letter-spacing: 3%;
 }
 #about{
-    
     background: #46355B;
 }
 #product_slide {
@@ -163,9 +162,10 @@ a {
     line-height: 30px;
     letter-spacing: 0.3px;
 }
-.about-grid {
+.about_grid {
+    background: #46355B;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
     justify-content: center;
@@ -186,6 +186,9 @@ a {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#about {
+    background: ;
 }
 .origin {
     background-color: #f8f8f8; /* Light background for distinction */
