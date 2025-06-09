@@ -58,6 +58,11 @@ nav {
 }
 
 #hero {
+    background: #46355B ;
+    opacity: 0.9;
+   
+    
+    background-repeat: no-repeat;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -105,6 +110,43 @@ a {
     color: #8D99E6;
     letter-spacing: 3%;
 }
+#about{
+    
+    background: #46355B;
+}
+#product_slide {
+    background: #46355B;
+}
+#testimonials {
+    background: #46355B;
+   
+
+}
+#values {
+    background: #46355B;
+  
+}
+.body{
+    background-color: #46355B;
+}
+#faq{
+    background: #46355B;
+    
+}
+#team{
+    background: #46355B;
+   
+}
+#chatbot {
+    background: #46355B;
+    
+}
+#contact_us{
+    background: #46355B;
+    
+
+}
+
 .about_us p {
    
     letter-spacing: 0.3px;
@@ -267,7 +309,7 @@ a {
 }
 .answer p{
     line-height: 1.6;
-    color : #052B3C;
+    color : white;
     margin: 0 0 1rem 0;
 
 }
