@@ -217,7 +217,7 @@ a {
     font-size: 24;
 
 }
-.chatbot {
+#chatbot {
     text-align: center;
     padding: 3rem;
 }
@@ -225,4 +225,121 @@ a {
     background-color: #8D99E6;
     border-radius: 12px;
     max-width: 650px;
+    height: 700px;
+   
+}
+.chat_input {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+.chat_input input{
+    flex: 1;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #423354;
+    outline: none;
+
+}
+
+
+.message.bot {
+    background-color: black;
+    color: white;
+    justify-self: left;
+    border-radius: 10px;
+    width:fit-content;
+    height: min-content;
+    text-align: left;
+
+}
+.message.user {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    height:30px;
+    text-align: right;
+    justify-self:right;
+}
+.message {
+    height: max-content;
+    width: auto;
+}
+.contact_form {
+    max-width: 650px;
+    background: #8D99E6;
+    border-radius:16 ;
+    padding: 2rem;
+    border-radius: 16px;
+}
+.form_part {
+    margin-bottom: 0.5rem;
+}
+.form_part label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+.form_part input,
+.form_part textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #052B3C;
+    color: white;
+    outline: none;
+    padding: 1 rem;
+}
+.form_part textarea {
+    height: 144px;
+    resize: vertical;
+}
+.send_button {
+    background: #052B3C;
+    cursor: pointer;
+    color: black ;
+    width: 100%;
+    font-size: 16px;
+    padding: 1rem, 2rem;
+    border: none;
+    border-radius: 200px;
+    width: 160px;
+    height: 60px;
+}
+.send_button:hover {
+    background: #1A4A7A;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+    background: #052B3C;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem, 0;
+    color: white;
+}
+.contact_links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+.contact_links img {
+    width: 35px;
+    height: 35px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.contact_links img:hover {
+    transform: translateY(-2px);
+    background-color:  #1A4A7A;
+    border-radius: 10px;
 }
