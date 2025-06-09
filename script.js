@@ -19,15 +19,14 @@ Team contacts/Support:
 Vision/Long-term goal:
     1.To be a leading force in transforming how people engage with money
     2. Educate people on matters regarding crypto and blockchain
+ `//This is the brain of the chatbot. All the information that could be answered with the chatbot is here. Anything outside this is unavailable, for noow
 
-
- `
  var questions = `1. Who founded the startup?
  2. What problem does it solve?
  What services or products does it offer?
  How can someone support or contact the team?
  What's the startup's vision or long-term goal?
- `
+ `//This is just the list of questions that the chatbot must be able to answer directly
 
 
 
@@ -37,12 +36,12 @@ Vision/Long-term goal:
 
 
  
- const chatMessagesContainer = document.getElementById('chat-messages');
- const prompt = document.getElementById('user-input');
- const send = document.getElementById("send-button");
- const allSampleQuestionsButtons = document.querySelectorAll(".sample-button")
+ const chatMessagesContainer = document.getElementById('chat-messages');//This gets the whole chat area, where the text is displayed....(the screen)
+ const prompt = document.getElementById('user-input');//This is the user input(What the user has asked)
+ const send = document.getElementById("send-button");//Gets the send button. We will use it to make the chatbot interactive
+ const allSampleQuestionsButtons = document.querySelectorAll(".sample-button")//This is now the all the 'faqs'. Questions that are readily answered by the chatbot. You click the button and AI works.
 ///This is code to update the conversation field
- function addMessage(text, sender) {
+ function addMessage(text, sender) { //This function is used to update the chat section. The user has asked a question and the AI has produced the output.
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message', sender);
     const p =document.createElement('p');
@@ -51,14 +50,14 @@ Vision/Long-term goal:
     chatMessagesContainer.appendChild(messageDiv);
  }
  async function sendMessage(params) {//To create a continuous cycle of sending and receiving messages
-    const messageText = userInput.value.trim()//Gets the user input/prompt and trims it
+    const messageText = prompt.value.trim()//Gets the user input/prompt and trims it
     //Now to evaluate if the user input is okay
     if (messageText === '') {
         addMessage("Ask a question about Monturi :)")
         return;
     }
     addMessage(messageText, 'user');//Shows the user's prompt in the chat area(like a bubble convo)
-    userInput.value = ''; //clear the input field
+    prompt.value = ''; //clear the input field
     try {
         const response = await puter.ai.chat(messageText, {system : context}
         );
@@ -73,13 +72,23 @@ Vision/Long-term goal:
     }
     
  }
+ //This next part is to 'send' prompts to puter....like just pressing Enter or send button
+ if(send && prompt) {
+    send.addEventListener('click', sendMessage); //The user prompt is sent when the send button is pressed
+    prompt.addEventListener('keypress', (event) => { //This also sends the message but now when the Enter key is pressed
+        if (event.key === 'Enter') {
+            sendMessage();
+        }
+    });
+ }
+ //This part now implements the part where a user selects a question from the already listed ones
 
- if (allSampleQuestionsButtons.length > 0) {
+ if (allSampleQuestionsButtons.length > 0) { //Ensures the sample questions actually exist?
     allSampleQuestionsButtons.forEach(button => {
         button.addEventListener('click', () => {
             const question = button.CDATA_SECTION_NODE.question;
-            userInput.value = question;
-            sendMessage()
+            prompt.value = question; //This adds the seleced question as the prompt and the chatbot works.
+            sendMessage() //This is now the Send function. The button has been selected, yes, but this function now sends it to the chatbot for ai to happen
         });
     });
 
