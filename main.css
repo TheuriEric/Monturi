@@ -89,10 +89,10 @@ nav {
 a {
     text-decoration: none;
 }
-section {
+/*section {
     padding: 1rem;
     margin: 2rem;
-}
+} */
 .section_title {
     text-align: center;
     align-items: center;
@@ -128,4 +128,101 @@ section {
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
     align-items: center;
+    justify-content: center;
+}
+.product {
+    border-radius: 16px ;
+    text-align: center;
+    padding: 2rem;
+    background-color: #8D99E6 ;
+    width: 400px;
+    height: 220px;
+    padding: 2rem;
+}
+.product_icon {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto, 1rem;
+}
+.product .h3{
+    font-size: 28;
+    line-height: 44;
+
+}
+.product  p {
+    font-size: 14;
+    
+}
+.product_text {
+    width: 390px;
+    height: 200px;
+}
+.products_grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+.team_grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.member {
+    background-color: #8C8892;
+    border-radius: 24px;
+    text-align: center;
+    padding: auto;
+}
+.role {
+    font-size: 18px;
+
+}
+.jd {
+    font-size: 15;
+}
+.member h4 {
+    font-size: 22;
+}
+.testimonial_grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+.testimonial_card {
+    background-color: #8C8892;
+    border-radius: 16px;
+    text-align: center;
+    padding: 2rem;
+
+}
+.values_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+
+}
+.value_icon {
+    width: 160px;
+    height: 160px;
+}
+.value {
+    padding: 2rem;
+
+}
+.value  h3{
+    font-size: 24;
+
+}
+.chatbot {
+    text-align: center;
+    padding: 3rem;
+}
+.chat_area {
+    background-color: #8D99E6;
+    border-radius: 12px;
+    max-width: 650px;
 }
