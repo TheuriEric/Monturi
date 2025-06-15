@@ -60,7 +60,7 @@ Vision/Long-term goal:
     prompt.value = ''; //clear the input field
     try {
         const response = await puter.ai.chat({
-            messgages: [{role: "user", content: messageText}],
+            messages: [{role: "user", content: messageText}],
             system : context}
             
         );
