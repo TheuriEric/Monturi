@@ -71,7 +71,8 @@ Vision/Long-term goal:
             addMessage("I am unable to answer that at the momment ):")
         }
     }catch (error) {
-       addMessage("Servers are busy! Please try again...") ///Incase something goes wrong and the chatbot is unable to work as expected we display this error message
+        console.error("Puter AI Chat encountered an error:", error);
+        addMessage("Servers are busy! Please try again...") ///Incase something goes wrong and the chatbot is unable to work as expected we display this error message
     }
     
  }
