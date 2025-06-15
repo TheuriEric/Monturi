@@ -66,12 +66,12 @@ Vision/Long-term goal:
            
         );
         if (response && response.message && response.message.content) {
-            addMessage(response.message.content, 'bot'); //This now shows the bot response via AI
+            addMessage(response.message.content); //This now shows the bot response via AI
            
         }
        
         else {
-            addMessage("I am unable to answer that at the moment ):", "bot")
+            addMessage("I am unable to answer that at the moment ):")
         }
     }catch (error) {
         console.error("Puter AI Chat encountered an error:", error);
