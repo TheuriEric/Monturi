@@ -59,7 +59,10 @@ Vision/Long-term goal:
     addMessage(messageText, 'user');//Shows the user's prompt in the chat area(like a bubble convo)
     prompt.value = ''; //clear the input field
     try {
-        const response = await puter.ai.chat(messageText, {system : context}
+        const response = await puter.ai.chat({
+            messgages: [{role: "user", content: messageText}],
+            system : context}
+            
         );
         if (response && response.content) {
             addMessage(response.content, 'bot'); //This now shows the bot response via AI
