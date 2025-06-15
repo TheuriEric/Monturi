@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -335,9 +337,51 @@ body{
 
 }
 .value  h3{
+    margin-top: 0;
     font-size: 24;
-
 }
+.value_tagline{
+    color: black;
+    font-weight: 550;
+}
+#values.brandbar {
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.values_grid.brandbar-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+    align-items: stretch;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    
+}
+.values_grid.brandbar-container::-webkit-scrollbar {
+    display: none; /* This removes the scrollbar*/
+}
+.value.brand-slogan {
+    /*This makes the visuals more appealing*/
+    text-align: center;
+    display: flex;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+    width: 300px;
+    max-width: 350px;
+    padding: auto;
+    background-color: #8C8892;
+    border-radius: 10px;
+    
+}
+.value.brand-slogan:hover {
+    transform: translateY(-10px);
+}
+
 #faq {
     max-width: 700px;
     margin: 40px auto;
@@ -548,3 +592,4 @@ footer {
     background-color:  #1A4A7A;
     border-radius: 10px;
 }
+

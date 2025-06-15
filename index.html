@@ -10,11 +10,12 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
+<!--Header Section-->
         <header >
             <nav class="navigation">
                 <div class="links">
                     <a href="#about">About Us</a>
-                    <a href="#product_slide">Products</a>
+                    <a href="#product-carousel">Products</a>
                     <a href="#testimonials">Testimonials</a>
                     <a href="#team">Team</a>
                     <a href="#contact_us">Contact Us</a>
@@ -122,19 +123,22 @@
                 </div>
             </section>
 <!--Values-->
-            <section id="values">
+            <section id="values" class="brandbar">
                 <h2 class="section_title">Our Values</h2>
-                <div class="values_grid">
-                    <div class="value">
+                <div class="values_grid brandbar-container">
+                    <div class="value brand-slogan">
                         <h3><b>Transparency</b></h3>
+                        <p class="value_tagline">Clear, honest communication</p>
                         <div><img class="value_icon" src="images/transparency.png" alt="transparency"></div>
                     </div>
-                    <div class="value">
+                    <div class="value brand-slogan">
                         <h3><b>Integrity</b></h3>
+                        <p class="value_tagline">Unwavering standards</p>
                         <div ><img src="images/user.png" class="value_icon" alt="Integrity"></div>
                     </div>
-                    <div class="value">
+                    <div class="value brand-slogan">
                         <h3><b>Security</b></h3>
+                        <p class="value_tagline">Protected Investments</p>
                         <div><img src="images/security.png" alt="security" class="value_icon"></div>
 
                     </div>
@@ -293,11 +297,13 @@
                 </div>
                 <div>
                     <span class="visitor_icon">👥</span>
-                    <span id="visitor_count">You've visited 2 times</span>
+                    <span id="visitor_count"></span>
                     
                 </div>
                 
             </footer>
+
+<!--Scripts-->
             <script src="https://js.puter.com/v2/"></script>
             <script src="script.js"></script>
 

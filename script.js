@@ -42,6 +42,24 @@ accordionItems.forEach(item => {
 
 
 
+//////Visitor Counter 
+const visitorCountElement = document.getElementById("visitor_count"); //Gets the visitor_count span element from index.html for modification
+let visitsRecorded = localStorage.getItem("number_of_visits"); //Creates a 'space' for holding the visit count
+
+if (visitsRecorded === null ) { //Check if the visitsRecorded variable exists, if there was such an item
+    visitsRecorded = 1; //If not, we set the value as 1, the first time..
+} else {
+    visitsRecorded = Number(visitsRecorded) +1;//If the variable already exists then we just increment it
+}
+
+localStorage.setItem('number_of_visits', visitsRecorded); //We update the visit count 'permanently'
+
+visitorCountElement.textContent = `You have visited ${visitsRecorded} times`;
+
+
+
+
+
 
 
 
