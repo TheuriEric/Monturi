@@ -124,7 +124,7 @@ a {
     background: #46355B;
   
 }
-.body{
+body{
     background-color: #46355B;
     left: 0px;
 }
@@ -291,6 +291,12 @@ a {
     text-align: center;
     padding: auto;
 }
+.team_image {
+    width: 155px;
+    height: 150px;
+    border-radius: 70px;
+
+}
 .role {
     font-size: 18px;
 
@@ -333,6 +339,8 @@ a {
 
 }
 #faq {
+    max-width: 700px;
+    margin: 40px auto;
     padding: 3rem 1rem;
 }
 .accordion-container {
@@ -344,19 +352,34 @@ a {
 }
 .accordion-item {
     border-bottom: 1px solid;
+    padding: 10px
 }
 .faq {
     text-align: left;
     border: none;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-weight: bold;
     width: 100%;
-    padding: 1.2rem 1.5rem;
+    padding: 10px;
     color: black;
+    border-radius: 10px;
+    font-size: 18px;
+    
 
+}
+.answer {
+    display: none;
+    padding: 10px;
+}
+.faq::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+}
+.accordion-item.active .faq::after {
+    content: '-';
 }
 .answer p{
     line-height: 1.6;

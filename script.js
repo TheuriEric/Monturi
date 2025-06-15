@@ -15,7 +15,27 @@ const right_button = document.getElementById('scroll-right')
 
 
 
+////////FAQ Accordion/////
+const accordionItems = document.querySelectorAll('.accordion-item');
 
+accordionItems.forEach(item => {
+    const title = item.querySelector('.faq');
+    title.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+
+        //close other faqs
+        accordionItems.forEach(i => i.classList.remove('active'));
+        accordionItems.forEach(i => i.querySelector('.answer').style.display = 'none');
+
+
+        //Opens the selected faq
+        if(!isOpen) {
+            item.classList.add('active');
+            item.querySelector('.answer').style.display="block";
+        }
+    });
+
+});
 
 
 
