@@ -593,3 +593,27 @@ footer {
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    /*This is for mobile phones*/
+    section {
+        padding: 30px 15px;
+    }
+    .section_title {
+        font-size: 28px;
+    }
+   
+    
+}
+@media (max-width: 1024px) {
+    /* For Desktops and laptops*/
+    section {
+        padding: 40px 20px;
+
+    }
+    .section_title {
+        font-size: 32px;
+    }
+    
+
+}
+
