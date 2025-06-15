@@ -113,9 +113,8 @@ a {
 #about{
     background: #46355B;
 }
-#product_slide {
-    background: #46355B;
-}
+
+
 #testimonials {
     background: #46355B;
    
@@ -127,6 +126,7 @@ a {
 }
 .body{
     background-color: #46355B;
+    left: 0px;
 }
 #faq{
     background: #46355B;
@@ -163,7 +163,7 @@ a {
     letter-spacing: 0.3px;
 }
 .about_grid {
-    background: #46355B;
+    background-image: url("images/logo.svg");
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -182,16 +182,17 @@ a {
     font-size: 18px; 
 }
 .about_us {
-    background-color: #f8f8f8; /* Light background for distinction */
+    /*background-color: #f8f8f8;  Light background for distinction */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #about {
-    background: ;
+    /*background-image: url("images/logo.svg");*/
+    background-image: black;
 }
 .origin {
-    background-color: #f8f8f8; /* Light background for distinction */
+    /*background-color: #f8f8f8;  Light background for distinction */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -199,14 +200,16 @@ a {
 
 
 
-.product {
+.carousel-card {
     border-radius: 16px ;
     text-align: center;
     padding: 2rem;
     background-color: #8D99E6 ;
-    width: 400px;
-    height: 220px;
+    min-width: 250px;
+    max-width: 280px;
     padding: 2rem;
+    text-align: left;
+    flex-shrink: 0;
 }
 .product_icon {
     width: 60px;
@@ -214,24 +217,69 @@ a {
     display: flex;
     margin: 0 auto 1rem;
 }
-.product .h3{
+.carousel-card .h3{
     font-size: 28px;
     line-height: 1.2;
 
 }
-.product  p {
+.carousel-card  p {
     font-size: 14px;
     
 }
+
 .product_text {
     width: 390px;
     height: 200px;
 }
-.products_grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+.carousel {
+    display: flex;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1 rem 0;
+    scrollbar-width: none;
+    
+
 }
+.product-carousel {
+    padding: 2rem;
+    text-align: center;
+}
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+  
+    
+    cursor: pointer;
+    z-index: 2;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .carousel-button.left {
+    margin-right: 0.5 rem;
+  }
+  
+  .carousel-button.right {
+    margin-left: 0.5rem;
+  }
+
+  .carousel-button-positioner {
+    display: flex;
+    justify-content: center;
+    gap: 1 rem;
+    margin-top: 1 rem;
+  }
 .team_grid {
     display: grid;
     gap: 2rem;

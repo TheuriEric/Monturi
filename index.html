@@ -54,11 +54,13 @@
                 </div>
 
 <!--Products-->
-                <section id="product_slide">
-                    <div>
-                        <h2 class="section_title">Our Products</h2>
-                        <div class="products_grid">
-                            <div class="product">
+                <section class="product-carousel">
+                    <h2 class="section_title">Our Products</h2>
+
+                    <div class="carousel-wrapper">
+                       
+                        <div class="carousel" id="product-carousel">
+                            <div class="carousel-card">
                                 <img src="images/roboadvisor.png" alt="roboadvisor" class="product_icon">
                                 <h3>
                                     <u>RoboAdvisor</u>
@@ -68,7 +70,7 @@
                                 <strong><p><u>Invention</u></strong>: Combinig AI with human expertise to identify trends and advice accordingly</p>
                                 <strong><p><u>Impact</u></strong>: Clients receive more accurate data and invest comfortably</p>
                             </div>
-                            <div class="product">
+                            <div class="carousel-card">
                                 <img src="images/fund.png" alt="cryptofund image" class="product_icon">
                                 <h3>
                                     <u>CryptoFund</u>
@@ -80,7 +82,7 @@
                                 <strong><p><u>Impact</u></strong>: We shield clients from scams by sharing accurate, reliable crypto information</p>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="carousel-card">
                                 <img src="images/consulting.png" alt="Consultancy" class="product_icon">
                                 <h3>
                                     <u>Fintech Consultancy</u>
@@ -90,7 +92,14 @@
                                 <strong><p><u>Invention</u></strong>: A step by step guide on how to launch fintechs</p>
                                 <strong><p><u>Impact</u></strong>: Enable startups launch faster and with ease</p>
                             </div>
+                            
                         </div>
+                        
+                        
+                        </div>
+                        <div class="carousel-button-positioner">
+                            <button class="carousel-button left" id="scroll-left"><img src="images/left_button.svg" alt=""></button>
+                            <button class="carousel-button right" id="scroll-right"><img src="images/right_button.svg" alt=""></button>
 
                     </div>
 

@@ -1,3 +1,84 @@
+/////Carousel Js
+const carousel = document.getElementById('product-carousel');
+const left_button = document.getElementById('scroll-left');
+const right_button = document.getElementById('scroll-right')
+  ///That part gets the buttons as well as the carousel section
+
+  left_button.addEventListener('click', () => {
+    carousel.scrollBy({left:300, behavior: 'smooth'});
+  });
+  right_button.addEventListener('click', ()=> {
+    carousel.scrollBy({left:-3000, behavior:'smooth'});
+  });
+
+  ///Scrolling functions impemented^
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ///////Chatbot Section///////              ///////Chatbot Section////
 const context = `Monturi was founded by Eric Theuri in the year 2025 June. He identified a problem, increasing number of online scams related to crypto and the desire for people to understand and invest in the financial world of forex, crypto and other financial instruments in decentralised finance. 
 Monturi's mission is to empower today’s generation in making wise financial decisions for a secure and opportunity-rich future.
@@ -28,14 +109,6 @@ Vision/Long-term goal:
  What's the startup's vision or long-term goal?
  `//This is just the list of questions that the chatbot must be able to answer directly
 
-
-
-
-
-
-
-
- 
  const chatMessagesContainer = document.getElementById('chat-messages');//This gets the whole chat area, where the text is displayed....(the screen)
  const prompt = document.getElementById('user-input');//This is the user input(What the user has asked)
  const send = document.getElementById("send-button");//Gets the send button. We will use it to make the chatbot interactive
@@ -50,6 +123,7 @@ Vision/Long-term goal:
     chatMessagesContainer.appendChild(messageDiv);
     chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
  }
+
  async function sendMessage() {//To create a continuous cycle of sending and receiving messages
     const messageText = prompt.value.trim()//Gets the user input/prompt and trims it
     //Now to evaluate if the user input is okay
@@ -79,6 +153,7 @@ Vision/Long-term goal:
     }
     
  }
+
  //This next part is to 'send' prompts to puter....like just pressing Enter or send button
  if(send && prompt) {
     send.addEventListener('click', sendMessage); //The user prompt is sent when the send button is pressed
