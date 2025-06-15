@@ -9,3 +9,5 @@ We also try to understand our clients' risk appetites and provide investment sol
 To **empower** today’s generation in making **wise financial decisions** for a **secure** and **opportunity-rich** future.
 
 Link to site:    https://theurieric.github.io/Monturi/
+
+Figma Link: https://www.figma.com/design/6UXb1bPdVrqOvwyozo7xn5/Monturi?node-id=5-12&t=fQ6JUHQs4jcDKiX9-1

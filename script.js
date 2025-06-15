@@ -48,6 +48,7 @@ Vision/Long-term goal:
     p.textContent = text;
     messageDiv.appendChild(p)
     chatMessagesContainer.appendChild(messageDiv);
+    chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
  }
  async function sendMessage() {//To create a continuous cycle of sending and receiving messages
     const messageText = prompt.value.trim()//Gets the user input/prompt and trims it
@@ -59,20 +60,22 @@ Vision/Long-term goal:
     addMessage(messageText, 'user');//Shows the user's prompt in the chat area(like a bubble convo)
     prompt.value = ''; //clear the input field
     try {
-        const response = await puter.ai.chat({
-            messages: [{role: "user", content: messageText}],
-            system : context}
-            
+        const prompt_with_context = `${context}\nUser: ${messageText}`;
+        const response = await puter.ai.chat( 
+            prompt_with_context
+           
         );
-        if (response && response.content) {
-            addMessage(response.content, 'bot'); //This now shows the bot response via AI
+        if (response && response.message && response.message.content) {
+            addMessage(response.message.content, 'bot'); //This now shows the bot response via AI
+           
         }
+       
         else {
-            addMessage("I am unable to answer that at the momment ):")
+            addMessage("I am unable to answer that at the moment ):", "bot")
         }
     }catch (error) {
         console.error("Puter AI Chat encountered an error:", error);
-        addMessage("Servers are busy! Please try again...") ///Incase something goes wrong and the chatbot is unable to work as expected we display this error message
+        addMessage("Servers are busy! Please try again..."); ///Incase something goes wrong and the chatbot is unable to work as expected we display this error message
     }
     
  }
