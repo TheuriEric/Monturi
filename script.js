@@ -49,7 +49,7 @@ Vision/Long-term goal:
     messageDiv.appendChild(p)
     chatMessagesContainer.appendChild(messageDiv);
  }
- async function sendMessage(params) {//To create a continuous cycle of sending and receiving messages
+ async function sendMessage() {//To create a continuous cycle of sending and receiving messages
     const messageText = prompt.value.trim()//Gets the user input/prompt and trims it
     //Now to evaluate if the user input is okay
     if (messageText === '') {
@@ -86,7 +86,7 @@ Vision/Long-term goal:
  if (allSampleQuestionsButtons.length > 0) { //Ensures the sample questions actually exist?
     allSampleQuestionsButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const question = button.CDATA_SECTION_NODE.question;
+            const question = button.dataset.question;
             prompt.value = question; //This adds the seleced question as the prompt and the chatbot works.
             sendMessage() //This is now the Send function. The button has been selected, yes, but this function now sends it to the chatbot for ai to happen
         });
