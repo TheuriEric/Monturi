@@ -114,6 +114,7 @@ a {
 }
 #about{
     background: #46355B;
+   
 }
 
 
@@ -165,7 +166,7 @@ body{
     letter-spacing: 0.3px;
 }
 .about_grid {
-    background-image: url("images/logo.svg");
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -222,6 +223,7 @@ body{
 .carousel-card .h3{
     font-size: 28px;
     line-height: 1.2;
+    width: 320px;
 
 }
 .carousel-card  p {
@@ -252,6 +254,7 @@ body{
     display: flex;
     align-items: center;
     overflow: hidden;
+    margin: 0 auto; /*makes the whole carousel fit well in the center*/
 }
 
 .carousel-button {
@@ -312,6 +315,8 @@ body{
 .testimonial_grid{
     display: grid;
     gap: 2rem;
+    justify-content: center;
+    padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
 }
@@ -319,7 +324,7 @@ body{
     background-color: #8C8892;
     border-radius: 16px;
     text-align: center;
-    padding: 2rem;
+    padding: 30px;
 
 }
 .values_grid {
@@ -357,6 +362,8 @@ body{
     align-items: stretch;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
+    margin: 0 auto;
+    width: fit-content;
     
 }
 .values_grid.brandbar-container::-webkit-scrollbar {

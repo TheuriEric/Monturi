@@ -5,10 +5,10 @@ const right_button = document.getElementById('scroll-right')
   ///That part gets the buttons as well as the carousel section
 
   left_button.addEventListener('click', () => {
-    carousel.scrollBy({left:300, behavior: 'smooth'});
+    carousel.scrollBy({left:500, behavior: 'smooth'});
   });
   right_button.addEventListener('click', ()=> {
-    carousel.scrollBy({left:-3000, behavior:'smooth'});
+    carousel.scrollBy({left:-500, behavior:'smooth'});
   });
 
   ///Scrolling functions impemented^
@@ -19,8 +19,8 @@ const right_button = document.getElementById('scroll-right')
 const accordionItems = document.querySelectorAll('.accordion-item');
 
 accordionItems.forEach(item => {
-    const title = item.querySelector('.faq');
-    title.addEventListener('click', () => {
+    const faq = item.querySelector('.faq');
+    faq.addEventListener('click', () => {
         const isOpen = item.classList.contains('active');
 
         //close other faqs
@@ -43,7 +43,7 @@ accordionItems.forEach(item => {
 
 
 //////Visitor Counter 
-const visitorCountElement = document.getElementById("visitor_count"); //Gets the visitor_count span element from index.html for modification
+const visitor_count_id = document.getElementById("visitor_count"); //Gets the visitor_count span element from index.html for modification
 let visitsRecorded = localStorage.getItem("number_of_visits"); //Creates a 'space' for holding the visit count
 
 if (visitsRecorded === null ) { //Check if the visitsRecorded variable exists, if there was such an item
@@ -54,7 +54,7 @@ if (visitsRecorded === null ) { //Check if the visitsRecorded variable exists, i
 
 localStorage.setItem('number_of_visits', visitsRecorded); //We update the visit count 'permanently'
 
-visitorCountElement.textContent = `You have visited ${visitsRecorded} times`;
+visitor_count_id.textContent = `You have visited ${visitsRecorded} times`;
 
 
 
